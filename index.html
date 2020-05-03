@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/ico">
+  <title>MovieSearch</title>
+<link href="vendors~main.769cc4b79178073c30ec.css" rel="stylesheet"><link href="main.769cc4b79178073c30ec.css" rel="stylesheet"></head>
+
+<body>
+  <div class="d-flex hidden" id="wrapper">
+  
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Categories </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Trillers</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Dramas</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Сomedies</a>
+      </div>
+    </div>
+  
+    <div id="page-content-wrapper">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mov-nav">
+        <a class="navbar-brand" href="#" id="logo">
+          <div class="d-inline-block align-top main-icon" alt=""></div> Movies
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" id="sidebar-button">Sidebar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 mt-5">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search" id="search" value="Matrix">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="go">Go</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="spinner" hidden>
+          <div class="col-12 mt-2 mb-2 text-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;">
+            </div>
+          </div>
+        </div>
+        <div class="row" id="mainrow">
+          <div class="mov-card col-12 col-sm-6 col-md-3 col-lg-2" hidden>
+            <a class="card card-shadow">
+              <img class="card-img-top mh-1" src="" alt="">
+              <div class="card-body ta-c">
+                <p class="card-text fs-14 mb-0">Movie</p>
+                <p class="card-text fs-12 ta-r btop">1996</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer fixed-bottom mov-footer">
+        <div class="container">
+          <span>© 2020 - MovieSearch</span>
+        </div>
+      </footer>
+    </div>
+  
+  
+  </div>
+
+<script src="vendors~main.769cc4b79178073c30ec.js"></script><script src="main.769cc4b79178073c30ec.js"></script></body>
+</html>
